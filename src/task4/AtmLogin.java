@@ -36,8 +36,8 @@ public class AtmLogin extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         atmNumberTextField = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        atmPinTextField = new javax.swing.JTextField();
         loginButton = new javax.swing.JButton();
+        atmPinTextField = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(550, 200));
@@ -56,8 +56,6 @@ public class AtmLogin extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel3.setText("Enter PIN");
 
-        atmPinTextField.setBackground(new java.awt.Color(255, 204, 204));
-
         loginButton.setBackground(new java.awt.Color(204, 204, 255));
         loginButton.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
         loginButton.setText("Login");
@@ -66,6 +64,8 @@ public class AtmLogin extends javax.swing.JFrame {
                 loginButtonActionPerformed(evt);
             }
         });
+
+        atmPinTextField.setBackground(new java.awt.Color(255, 204, 204));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -81,9 +81,9 @@ public class AtmLogin extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(atmPinTextField)
                             .addComponent(atmNumberTextField)
-                            .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(loginButton, javax.swing.GroupLayout.DEFAULT_SIZE, 197, Short.MAX_VALUE)
+                            .addComponent(atmPinTextField))))
                 .addContainerGap(45, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -122,6 +122,7 @@ public class AtmLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
         int atmNumber = Integer.parseInt(atmNumberTextField.getText().toString());
         int atmPin = Integer.parseInt(atmPinTextField.getText().toString());
+        
         
         if(atmNumber == number && atmPin == pin){
             dispose();
@@ -173,7 +174,7 @@ public class AtmLogin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField atmNumberTextField;
-    private javax.swing.JTextField atmPinTextField;
+    private javax.swing.JPasswordField atmPinTextField;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
