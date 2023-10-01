@@ -14,7 +14,7 @@
 
 **Task-4: ATM Interface**
 
-![atmlogin](https://github.com/govindkmk/Codsoft-Java-Internship-Tasks/assets/91989312/5cda1b40-a2a2-4e23-a42f-e880c0787719)
+![atmlogin](https://github.com/govindkmk/Codsoft-Java-Internship-Tasks/assets/91989312/0cf34b90-6e2b-4a08-8a17-d1481d145c56)
 ![atmmenu](https://github.com/govindkmk/Codsoft-Java-Internship-Tasks/assets/91989312/f83a326f-b610-442f-ba46-b5b73cf86901)
 ![deposite](https://github.com/govindkmk/Codsoft-Java-Internship-Tasks/assets/91989312/8bb8da5d-34e8-47e7-adc4-07e14a0e690b)
 ![currentbalance](https://github.com/govindkmk/Codsoft-Java-Internship-Tasks/assets/91989312/8c67c939-6fa9-474d-a014-b19141c66bf5)
